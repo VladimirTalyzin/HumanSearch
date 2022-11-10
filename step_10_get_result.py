@@ -204,4 +204,4 @@ for index, data in tqdm(sampleList.iterrows(), total=sampleList.shape[0]):
     result.append(data)
 
 # Сохраняем полученные данные в CSV-файл, для отправки на чемпионат
-writeToCSV(path.join(root, "result.csv"), ["ID_img", "region_shape"], result)
+writeToCSV(path.join(root, "result.csv"), ["ID_img", "region_shape"], result, rawFormat = True)

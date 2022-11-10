@@ -28,7 +28,7 @@ result = {}
 # Для всех найденных файлов маленьких масок:
 for filename, fullName in tqdm(masks.items()):
     # Из названия файла получаем номер большой маски, а также положение по X и Y
-    fileNumber, stringX, stringY, _ = filename.split("_")
+    fileNumber, stringX, stringY = (filename.split(".")[0]).split("_")
     x, y = int(stringX), int(stringY)
 
     # Если такой большой маски ещё не было в словаре,
