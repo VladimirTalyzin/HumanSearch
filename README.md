@@ -4,6 +4,8 @@
 ![Распознавание](https://0v.ru/humans/detect-1.png)
 ![Распознавание](https://0v.ru/humans/detect-3.png)
 
+![Победа 1-е место!](https://0v.ru/humans/diplom-pobeda.jpg)
+
 * Шаг 1: **step_1_prepare_train.py** - подготовить фотографии 256х256 из train, где есть группы людей. Для проведения разметки.
 * Шаг 2: **step_2_split_train_and_test.py** - разбить все фотографии train и test на кусочки по 256х256. Получается 104 тыс. картинок для train и 72 тыс. картинок для test.
 * Шаг 3: **step_3_prepare_masks.py** - создать маски для обучения сегментации из разметки
